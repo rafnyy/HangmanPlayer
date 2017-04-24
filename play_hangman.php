@@ -60,7 +60,6 @@ function addToNode($word, $node) {
 
     $current_guess = $node['guess'];
     // increment char_count and set already guessed chars to zero
-    print_r($char_count);
     foreach($char_count as $letter => $count) {
         // If $letter is in $state, we have already guessed this
         if (strpos($node['state'], $letter) !== false) {
@@ -161,7 +160,7 @@ foreach($words as $word) {
     strlen($word);
     
     $root = addToNode($word, $root);
-    print("Adding " . $word . " to decision tree." . PHP_EOL);
+    //print("Adding " . $word . " to decision tree." . PHP_EOL);
     $wordCount++;
 }
 
