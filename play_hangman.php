@@ -150,8 +150,7 @@ function newNode($state) {
 }
 
 $response = CallAPI("GET", "https://raw.githubusercontent.com/despo/hangman/master/words");
-//$word_str = strtolower($response['result']);
-$word_str = "aak\nkok\noak\nbbb";
+$word_str = strtolower($response['result']);
 
 $root = newNode('');
 
