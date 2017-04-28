@@ -67,7 +67,8 @@ while(true) {
     $token = $response['json']['token'];
     
     if($response['status_code'] === 200 && strpos($response['json']['hangman'], '_') === false) {
-        print "You Won! with " . $strike . " strikes against you.";
+        print "Your guess of " . $data['letter'] . " was correct." . PHP_EOL;
+        print $response['json']['hangman'] . "! You Won! with " . $strike . " strikes against you.";
         exit();
     }
 
