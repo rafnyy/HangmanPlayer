@@ -81,7 +81,7 @@ while(true) {
         print "The new state of the game is " . $response['json']['hangman'] . PHP_EOL;
     }
 
-    if($strike >= 5) {
+    if($strike >= 7) {
         break;
     }
     
